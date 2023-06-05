@@ -1,0 +1,54 @@
+{
+  "name": "@millionscard/ts-dominos",
+  "version": "1.0.0",
+  "description": "Reversed library for Dominos in TypeScript",
+  "engines": {
+    "node": "16.x.x"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test:updateCard": "ts-node src/test.ts --updateCard",
+    "lint": "eslint --ignore-path .prettierignore --ext .ts,.js .",
+    "prettier:format": "prettier --write \"**/*.+(js|ts|json)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millionscard/ts-dominos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/millionscard/ts-dominos/issues"
+  },
+  "publishConfig": {
+    "@millionscard:registry": "https://npm.pkg.github.com"
+  },
+  "homepage": "https://github.com/millionscard/ts-dominos#readme",
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "@types/tough-cookie": "^4.0.2",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@millionscard/http": "^1.0.6",
+    "@millionscard/ts-commons": "^1.0.4",
+    "dotenv": "^16.0.3",
+    "jwt-decode": "^3.1.2",
+    "tough-cookie": "^4.1.2",
+    "ts-device-utils": "^1.0.0",
+    "uuid": "^9.0.0"
+  }
+}
